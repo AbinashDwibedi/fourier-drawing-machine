@@ -558,8 +558,8 @@ function drawEpicycles(startX, startY, fourier, horizontal) {
 }
 function draw() {
   ctx.clearRect(0, 0, w, h);
-  let startX = w / 4;
-  let startY = h / 4;
+  let startX = 0;
+  let startY = 0;
 
   let posX = drawEpicycles(startX, startY, fourierX, true);
   let posY = drawEpicycles(startX, startY, fourierY, false);
