@@ -416,6 +416,7 @@ function redoLast() {
 function clearCanvas(element) {
   context.clearRect(0, 0, width, height);
   drawArray = [];
+  allPoints = [];
   index = -1;
 }
 
@@ -484,7 +485,7 @@ const dft = (x) => {
       re += x[n] * Math.cos(((2 * Math.PI) / N) * n * k);
       im += -(x[n] * Math.sin(((2 * Math.PI) / N) * n * k));
     }
-    //normalizing dft otherwise its amplitude will imcrease with increase in value of N;
+    //normalizing dft otherwise its amplitude will increase with increase in value of N;
     re /= N;
     im /= N;
 
